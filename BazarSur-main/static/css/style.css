@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    font-family: 'Inkston Brush', sans-serif;
+    color: white;
+  }
+
+  header {
+    padding: 20px;
+    height: 80px;
+    text-align: center;
+    background-color: #286bcf;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+
+  h2 {
+    font-family: Inkston Brush;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px; /* Puedes ajustar este valor según lo necesites */
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 22px;
+    padding: 10px;
+    line-height: 1.5; /* Ajusta este valor para centrar verticalmente el texto */
+  }
+
+/* Formulario de contacto */
+form {
+  font-family: Inkston Brush;
+  background-color: #222;
+  font-family: Inkston Brush;
+  padding: 10px 20px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0px 0px 35px #0009;
+  margin-top: 50px;
+  border-radius: 8px;
+}
+
+.form_input {
+  padding: 10px 20px;
+  color: #eee;
+  font-family: Inkston Brush;
+}
+
+input,
+textarea,
+select {
+  font-family: Inkston Brush;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 8px;
+  border: none;
+  border: 1px solid #222;
+  box-shadow: 0px 0px 15px #0003;
+  background-color: transparent;
+  color: #eee;
+  margin: 6px 0;
+}
+
+fieldset {
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+legend {
+  padding: 0 6px;
+  border: 1px solid;
+}
+
+option {
+  background-color: #222;
+}
+
+textarea {
+  min-width: 100%;
+  resize: vertical;
+  min-height: 100px;
+  max-height: 200px;
+  font-family: sans-serif;
+}
+
+label {
+  font-size: 0, 88em;
+  line-height: 2;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  font-family: Inkston Brush;
+  color: #222;
+}
+
+.checkbox {
+  font-family: Inkston Brush;
+  width: auto;
+  height: 10px;
+}
+
+/*hipervinculos del menu */
+.hipervinculos {
+  margin: 0px 10px;
+}
+
+/* banner */
+#banner {
+  text-align: center;
+  width: 80%; /* Ancho del banner */
+  max-width: 600px; /* Ancho máximo del banner */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin: 0 auto; /* Margen automático en los lados para centrar horizontalmente */
+}
+
+/* footer */
+ul li {
+  list-style: none;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #286bcf;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 10px 5px;
+  flex-wrap: wrap;
+}
+
+.icon-elemn {
+  list-style: none;
+}
+
+.icon {
+  list-style: none;
+  font-size: 32px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  transform: translateY(-10px);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.menu-elem {
+  list-style: none;
+}
+
+.menu-icon {
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 5px 10px;
+  opacity: 0, 75;
+  transition: 0.3s;
+}
+
+.menu-icon:hover {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  
+}
+
+/* responsive index */
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+}
+
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 768px) {
+    .container {
+      max-width: 960px; /* Cambia el ancho máximo del contenedor */
+      margin: 0 auto; /* Centra el contenedor en la pantalla */
+    }
+  }
+  
+  /* Estilos para pantallas medianas */
+  @media screen and (max-width: 767px) {
+    .container {
+      padding: 0 20px; /* Añade un poco de espacio en los bordes */
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 0 10px; /* Añade más espacio en los bordes */
+    }
+  }
+
+  

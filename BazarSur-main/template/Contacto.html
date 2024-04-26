@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Css Externo -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/static/img/favicon.bazar.ico" />
+
+    <!-- Hiperviculo -->
+    <nav>
+      <div>
+        <a href="/"><span>BazarSur</span></a>
+      </div>
+    </nav>
+
+    <br>
+  </head>
+        <!-- Encabezado -->
+        <header class="header">
+          <nav>
+              <!-- Logo -->
+              <div>
+                  <a href="/"><img src="/static/img/logo.jpeg" alt="logo" class="logo"></a>
+              </div>
+
+              <!-- Hipervínculos del menú -->
+              <div>
+                  <span class="hipervinculos"><a href="/template/Contacto.html" class="e">Contacto</a></span>
+                  <span class="hipervinculos"><a href="/template/Preguntas-Frecuentes.html" class="e">Preguntas Frecuentes</a></span>
+                  <span class="hipervinculos"><a href="/template/Quienes-Somos.html" class="e">Quiénes Somos</a></span>
+              </div>
+          </nav>
+      </header>
+<body>
+  <form action="">
+
+
+    <h2>
+      Formulario de Contacto
+    </h2>
+
+<!-- Simple Inputs -->
+    <div class="form_input">
+      <fieldset>
+        <legend>INFORMACION BASICA</legend>
+      <input type="Nombre" placeholder="Nombre " id="nombre" required>
+      <input type="Apellido" placeholder="Apellido" required>
+      <input type="Edad" placeholder="Edad">
+    </fieldset>
+
+    <fieldset>
+      <legend>INFORMACION DE CONTACTO</legend>
+      <input type="Email" placeholder="Email" id="Email" required>
+      <input type="text" placeholder="Telefono" id="Telefono" required>
+    </fieldset>
+
+
+    </div>
+
+<!-- Select & option -->
+    <div class="form_input">
+      <label for="">¿Que pieza queres restaurar?
+        <select>
+          <option value="Cacerola">Cacerola de 24cm a 26cm</option>
+          <option value="Cacerola">Sarten de 24cm a 26cm</option>
+          <option value="Cacerola">Bifera de 26cm a 29cm</option>
+          <option value="Cacerola">Paellera/Pizzera/Ovalada de 30cm a 33cm</option>
+          <option value="Cacerola">Cacerola Doble/Sarten Doble de 24cm a 30cm</option>
+          <option value="Cacerola">Cuadrada/Olla/Rectangular de 28cm a 30cm</option>
+          <option value="Cacerola">Jarro/Pava/Cafetera</option>
+          <option value="Cacerola">Tostador Simple/Doble</option>
+          <option value="Cacerola">Budinera o otros complementos</option>
+      </label>
+      </select>
+    </div>
+
+<!-- Datalist & Option -->
+    <div class="form_input">
+      <label for="">¿Por donde nos conociste?
+        <input list="Referente" name="Referente">
+        <datalist id="Referente">
+          <option value="Red Social">Instagram/Facebook</option>
+          <option value="Recomendacion familiar">Un Amigo/familiar</option>
+          <option value="Recomendacion Empresa">Una empresa/Negocio</option>
+      </label>
+      </select>
+    </div>
+
+<!-- Textarea -->
+    <div class="form_input">
+      <label>Mensaje
+      <textarea placeholder="Deja tu mensaje..." id="Mensaje"></textarea>
+    </label>
+    </div>
+
+    <label for="adjunto">Subir Foto de tu pieza (Opcional):</label>
+    <input type="file" id="adjunto" name="adjunto"><br><br>
+
+    <div class="form_input">
+      <label>Acepto <a href="./termis.html" target="_blank">Terminos y Condiciones</a>
+      <input type="checkbox" class="checkbox">
+    </label>
+    </div>
+    
+  </form>
+
+  <!-- Pie -->
+  <br>
+<footer class="footer"> 
+  <div class="logo">
+      <img src="/static/img/logo.jpeg" alt="logo" class="logo">
+  </div>
+  <ul class="social-icon">
+      <li>
+          <a href="#" class="icon"><img src="/static/img/logofb.png" alt=""></a>
+      </li>
+      <li>
+          <a href="#" class="icon"><img src="/static/img/logoig.png" alt=""></a>
+      </li>
+      <li>
+          <a href="#" class="icon"><img src="/static/img/logowpp.png" alt=""></a>
+      </li>
+      <li>
+          <a href="#" class="icon"><img src="/static/img/logoyoutube.png" alt=""></a>
+      </li>
+  </ul>
+  <ul class="menu">
+      <li><a href="" class="menu-icon">Inicio</a></li>
+      <li><a href="" class="menu-icon">Equipo</a></li>
+      <li><a href="" class="menu-icon">Contacto</a></li>
+      <li><a href="" class="menu-icon">Video</a></li>
+      <li><a href="" class="menu-icon">Sobre Nosotros</a></li>
+  </ul>
+  <p class="text">2024 Todos los derechos reservados</p>
+</footer>
+</body>
+</html>
+
